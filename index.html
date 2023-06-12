@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Find the Number Game</title>
+  </head>
+  <body>
+    <header class="header text-center mt-5">
+      <h1 class="h1">Guess The Number(1-100)</h1>
+    </header>
+    <main class="container">
+      <form class="d-flex justify-content-center my-5 gap-3" action="">
+        <input
+          class="form-control w-25"
+          type="number"
+          name=""
+          id="guess-number"
+          max="100"
+          min="1"
+        />
+        <button class="btn btn-primary" id="submit">Guess</button>
+      </form>
+      <div class="card m-auto" style="width: 48rem">
+        <img
+          id="myImage"
+          src="./images/guess-the-number.png"
+          class="img-fluid rounded-4 mx-auto mt-2"
+          alt="..."
+          style="width: 450px; height: 450px"
+        />
+        <div class="card-body text-center">
+          <p id="myParagraph" class="card-text text-bg-primary fs-3">
+            Guess the number!
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
